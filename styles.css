@@ -1,0 +1,43 @@
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+  }
+h1{
+    text-align: center;
+}  
+.container {
+    
+    display: grid;
+    width: 500px;
+    float: right;
+    padding-right: 35%;
+    padding-top: 4%;
+    height: 500px;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+.hover:hover{
+    background-color: aqua;
+
+}
+.gridelem{
+    border: solid black 1px;
+}
+button{
+    display: block;
+    background-color: rgb(39, 38, 38);
+    color: blanchedalmond;
+    width: 100px;
+    height: 50px;
+    border-radius: 15px;
+    margin: 10px;
+}
+.slider{
+    -webkit-appearance: none;
+    background: rgb(255, 254, 254);
+    outline: none;
+    border-radius: 50px;
+    border: black solid 2px;
+    
+
+}
